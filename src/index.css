@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: #FF6F61;
+  transition: all ease-in-out 150ms;
 }
 
 a:hover {
@@ -109,4 +110,15 @@ a:hover {
     padding-left: 4px;
     padding-right: 4px;
   }
+}
+
+.hero-img {
+  background-image: url('./assets/about.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-opacity {
+  background-color: rgba(0, 0, 0, 0.6);
 }
