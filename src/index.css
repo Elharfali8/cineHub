@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #121212;
+  color: #FFFFFF;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: #1F1B24;
+  color: #FFFFFF;
+}
+
+.navbar a {
+  color: #FFFFFF;
+  transition: all ease-in-out 150ms;
+}
+
+
+
+.active {
+  background-color: #FF6F61;
+}
+
+.active:hover {
+  color: white;
+}
+
+.hero {
+  background-color: #121212;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 50px;
+}
+
+.hero h1 {
+  color: #FFFFFF;
+}
+
+.hero p {
+  color: #B0B0B0;
+}
+
+.hero .btn {
+  background-color: #FF6F61;
+  color: #FFFFFF;
+}
+
+.hero .btn:hover {
+  background-color: #FFD700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFFFFF;
+}
+
+a {
+  color: #FF6F61;
+}
+
+a:hover {
+  color: #FFD700;
+}
+
+.button-primary {
+  background-color: #FF6F61;
+  color: #FFFFFF;
+}
+
+.button-primary:hover {
+  background-color: #FFD700;
+}
+
+.button-secondary {
+  background-color: #1F1B24;
+  color: #FFFFFF;
+}
+
+.card {
+  background-color: #1F1B24;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-container {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
