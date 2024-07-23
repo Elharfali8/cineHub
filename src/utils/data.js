@@ -22,3 +22,5 @@ export const navLinks = [
         path: '/discover'
     },
 ]
+
+export const image = 'https://image.tmdb.org/t/p/original'
