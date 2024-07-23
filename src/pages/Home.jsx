@@ -1,5 +1,5 @@
 import React from 'react'
-import { Featured, Hero } from '../components'
+import { Featured, Hero, TopRated } from '../components'
 
 const Home = () => {
   return (
@@ -9,6 +9,7 @@ const Home = () => {
       </div>
       <div className='py-9 lg:py-12'>
         <Featured />
+        <TopRated />
       </div>
     </main>
   )
