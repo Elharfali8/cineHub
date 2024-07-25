@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Footer, Navbar, Sidebar } from "./components"
-import { Home } from "./pages"
+import { Home, Movies } from "./pages"
 import { useState } from "react"
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
       <Sidebar navIsOpen={navIsOpen} handleNav={handleNav} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/movie" element={<Movies />} />
       </Routes>
       <Footer />
     </BrowserRouter>

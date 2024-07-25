@@ -1,11 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
 import featuredReducer from "./features/featured/featuredSlice";
 import topRatedReducer from "./features/topRated/topRatedSlice";
+import genresReducer from "./features/genres/genresSlice";
+import mediaReducer from "./features/media/mediaSlice";
 
 
 export const store = configureStore({
     reducer: {
         featured: featuredReducer,
-        top_rated: topRatedReducer
+        top_rated: topRatedReducer,
+        genres: genresReducer,
+        media: mediaReducer
     }
 })
