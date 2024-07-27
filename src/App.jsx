@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Footer, Navbar, Sidebar } from "./components"
-import { Home, Movies } from "./pages"
+import { Home, Movies, TopRatedPage } from "./pages"
 import { useState } from "react"
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movie" element={<Movies />} />
+        <Route path="/movie/top_rated" element={<TopRatedPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

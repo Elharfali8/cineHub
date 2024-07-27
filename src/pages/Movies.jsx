@@ -16,7 +16,8 @@ const Movies = () => {
 
     const handleActiveBtn = (e) => {
         const dataId = e.target.dataset.id
-        setActiveBtn(dataId)
+      setActiveBtn(dataId)
+      setPage(1)
     }
     
     useEffect(() => {
