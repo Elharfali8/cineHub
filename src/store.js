@@ -10,6 +10,6 @@ export const store = configureStore({
         featured: featuredReducer,
         top_rated: topRatedReducer,
         genres: genresReducer,
-        media: mediaReducer
+        media: mediaReducer,
     }
 })

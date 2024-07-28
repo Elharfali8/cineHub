@@ -3,7 +3,7 @@ import { About, Featured, Hero, TopRated } from '../components'
 
 const Home = () => {
   return (
-    <main>
+    <main className='pt-20'>
       <div className="hero-img">
         <Hero />
       </div>

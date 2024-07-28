@@ -7,7 +7,7 @@ import { FaTimes } from 'react-icons/fa'
 const Navbar = ({ navIsOpen, handleNav }) => {
   
   return (
-      <nav className='navbar h-20 flex items-center justify-center'>
+      <nav className='navbar h-20 flex fixed items-center justify-center'>
         <div className="container main-container flex items-center justify-between">
         <Link to='/'>
           <img src={logo} alt="main logo cineHub logo" className='w-full max-w-[140px]' />

@@ -34,15 +34,12 @@ const Movies = () => {
 
     
   return (
-      <main className='min-h-[calc(100vh-80px)] py-8 lg:py-10'>
-          <div className="container main-container">
+      <main className='min-h-[calc(100vh-80px)]  pt-20  '>
+          <div className="container main-container py-8 lg:py-10">
               <PageLinks title='movies' link={false} />
               <div className='py-5 lg:py-7 flex items-center gap-x-4'>
                   <Link to='/movie/top_rated' className='px-6 py-2 rounded-lg border border-[#FF6F61] text-white text-lg lg:text-xl font-semibold tracking-wider transition-all ease-in-out duration-150 hover:bg-[#FF6F61] hover:text-white'>
                     Top Rated
-                  </Link>
-                  <Link to='/movie/popular' className='px-6 py-2 rounded-lg border border-[#FF6F61] text-white text-lg lg:text-xl font-semibold tracking-wider transition-all ease-in-out duration-150 hover:bg-[#FF6F61] hover:text-white'>
-                    Popular
                   </Link>
                   <Link to='/movie/trending' className='px-6 py-2 rounded-lg border border-[#FF6F61] text-white text-lg lg:text-xl font-semibold tracking-wider transition-all ease-in-out duration-150 hover:bg-[#FF6F61] hover:text-white'>
                     Trending
