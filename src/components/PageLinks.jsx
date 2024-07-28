@@ -11,7 +11,7 @@ const PageLinks = ({title, link, linkPath,child, singlePage, singleTitle}) => {
               <FaAngleRight size={23} />
           </span>
           {link ? (
-              <Link to={`${linkPath}`} className='text-lg lg:text-xl capitalize'>
+              <Link to={`/${linkPath}`} className='text-lg lg:text-xl capitalize'>
                     {title}
                </Link>
           ) : (
