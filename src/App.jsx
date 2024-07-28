@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Footer, Navbar, Sidebar } from "./components"
-import { Home, Movies, TopRatedPage, TrendingPageMovies, TvShows } from "./pages"
+import { Home, Movies, TopRatedPage, TrendingPageMovies, TrendingPageTv, TvShows } from "./pages"
 import { useState } from "react"
+import SinglePage from "./pages/SinglePage"
 
 function App() {
   const [navIsOpen, setNavIsOpen] = useState(false)
@@ -20,6 +21,8 @@ function App() {
         <Route path="/:type/top_rated" element={<TopRatedPage />} />
         <Route path="/movie/trending" element={<TrendingPageMovies />} />
         <Route path="/tv" element={<TvShows />} />
+        <Route path="/tv/trending" element={<TrendingPageTv />} />
+        <Route path="/:type/:id" element={<SinglePage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
