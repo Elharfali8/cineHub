@@ -22,7 +22,7 @@ const SinglePage = () => {
   return (
     <main className='min-h-[calc(100vh-80px)]  pt-20  '>
           <div className="container main-container py-8 lg:py-10">
-        <PageLinks title={type} link={true} singlePage={true} linkPath={'tv'} singleTitle='hola' />
+        <PageLinks title={type} link={true} singlePage={true} linkPath={'tv'} singleTitle={title || name} />
         {isLoading ? (
           <div className='py-12 lg:py-16 grid place-items-center'>
               <LoadingCircle />

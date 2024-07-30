@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Footer, Navbar, Sidebar } from "./components"
-import { Home, Movies, TopRatedPage, TrendingPageMovies, TrendingPageTv, TvShows } from "./pages"
+import { Discover, Home, Movies, TopRatedPage, TrendingPageMovies, TrendingPageTv, TvShows } from "./pages"
 import { useState } from "react"
 import SinglePage from "./pages/SinglePage"
 
@@ -23,6 +23,7 @@ function App() {
         <Route path="/tv" element={<TvShows />} />
         <Route path="/tv/trending" element={<TrendingPageTv />} />
         <Route path="/:type/:id" element={<SinglePage />} />
+        <Route path="/discover" element={<Discover />} /> 
       </Routes>
       <Footer />
     </BrowserRouter>
