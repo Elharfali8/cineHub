@@ -3,14 +3,20 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchSearch } from "../features/search/searchSlice";
 import { FaSearch } from "react-icons/fa";
 import { LoadingCircle, MediaCard } from "../components";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Discover = () => {
   const dispatch = useDispatch();
   const { search, query, isLoading, error, pages } = useSelector((store) => store.search);
   const [mainQuery, setMainQuery] = useState(query || '');
   const [page, setPage] = useState(1);
-  const [qPage, setQPage] = useState(1);
+    const [qPage, setQPage] = useState(1);
+    const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
 
   useEffect(() => {
     dispatch(fetchSearch({ query: mainQuery, page, qPage }));

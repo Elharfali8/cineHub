@@ -1,10 +1,17 @@
 import logo from '../assets/logo.png'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { navLinks } from '../utils/data'
 import { FaBars } from 'react-icons/fa6'
 import { FaTimes } from 'react-icons/fa'
+import { useEffect } from 'react'
 
 const Navbar = ({ navIsOpen, handleNav }) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   
   return (
       <nav className='navbar h-20 flex fixed items-center justify-center z-[99]'>
